@@ -1,0 +1,24 @@
+import { describe, test, expect } from '@jest/globals'
+import Converter from './Converter.js'
+import path from 'path'
+
+/**
+ *    *  Examples:
+ *    - https://loige.co
+ *    - https://www.npmjs.com/package/cheerio
+ *    - http://www.google.com/engine/chroma fusion engine//high/ /
+ */
+
+const urlToPath = () => {
+  const filePath = Converter.urlToPath(
+    'http://www.google.com/engine/chroma fusion engine//high/ /',
+    'http://www.google.com/engine/chroma fusion engine//high/ /',
+    path.join(__dirname, 'jest-test-dir'),
+  )
+
+  console.log(filePath)
+}
+
+describe('Converter', () => {
+  test('urlToPath', urlToPath)
+})

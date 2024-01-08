@@ -1,0 +1,18 @@
+import { describe, test, expect } from '@jest/globals'
+import Spider from './Spider.js'
+import fs from 'fs'
+import path from 'path'
+
+const webpage = fs.readFileSync(path.join(__dirname, './loigeco.htm'), {
+  encoding: 'utf-8',
+})
+
+const findLinksInSameDomain = () => {
+  const links = Spider.findLinksInSameDomain(webpage, 'https://loige.co')
+  console.log(links)
+  expect(links).toBeInstanceOf(Array)
+}
+
+describe('Spider', () => {
+  test('findLinksInSameDomain', findLinksInSameDomain)
+})

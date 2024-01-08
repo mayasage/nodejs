@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "dependencies": {
+    "workerpool": "6.4.0"
+  }
+}

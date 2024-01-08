@@ -1,0 +1,5 @@
+console.log('c1')
+console.log('c2')
+console.error('cer1')
+console.log('c3')
+console.error('cer2')

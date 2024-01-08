@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "dependencies": {
+    "co": "4.6.0"
+  }
+}

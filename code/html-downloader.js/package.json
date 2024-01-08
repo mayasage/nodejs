@@ -1,0 +1,8 @@
+{
+  "type": "module",
+  "dependencies": {
+    "cheerio": "1.0.0-rc.12",
+    "slug": "8.2.2",
+    "superagent": "8.0.9"
+  }
+}

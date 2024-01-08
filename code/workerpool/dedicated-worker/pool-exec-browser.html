@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Option-1: Local Download -->
+    <script src="workerpool.min.js"></script>
+
+    <script>
+      // This script execute functions.
+      const pool = workerpool.pool('browser-worker.js')
+
+      const sH = res => console.log(`res: ${res}`)
+      const eH = e => console.error(`error: ${e}`)
+      const k = () => pool.terminate() // destroy the pool
+
+      pool.exec('add', [2, 3]).then(sH).catch(eH).then(k)
+    </script>
+  </head>
+  <body></body>
+</html>

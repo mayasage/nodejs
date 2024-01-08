@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Option-1: Local Download -->
+    <!-- <script src="workerpool.min.js"></script> -->
+
+    <!-- Option-2: CDN Download -->
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/workerpool@6.4.2/dist/workerpool.min.js"
+      integrity="sha256-d/ykfModKZvsXsED8P6taPH0rjJmpPp2giK24UUutD8="
+      crossorigin="anonymous"
+    ></script> -->
+
+    <!-- <script>
+      const pool = workerpool.pool()
+
+      const add = (a, b) => a + b
+
+      const sH = res => console.log(`res: ${res}`)
+      const eH = e => console.error(`error: ${e}`)
+      const k = () => pool.terminate() // destroy the pool
+
+      pool.exec(add, [2, 3]).then(sH).catch(eH).then(k)
+    </script> -->
+
+    <!-- Option-3: CDN Import -->
+    <script type="module">
+      import workerpool from 'https://cdn.jsdelivr.net/npm/workerpool@6.4.2/+esm'
+
+      const pool = workerpool.pool()
+
+      const add = (a, b) => a + b
+
+      const sH = res => console.log(`res: ${res}`)
+      const eH = e => console.error(`error: ${e}`)
+      const k = () => pool.terminate() // destroy the pool
+
+      pool.exec(add, [2, 3]).then(sH).catch(eH).then(k)
+    </script>
+  </head>
+  <body></body>
+</html>

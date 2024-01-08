@@ -1,0 +1,8 @@
+{
+  "type": "module",
+  "dependencies": {
+    "parallel-transform": "1.2.0",
+    "split": "1.0.1",
+    "superagent": "8.0.9"
+  }
+}

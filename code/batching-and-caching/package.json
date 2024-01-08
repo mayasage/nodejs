@@ -1,0 +1,13 @@
+{
+  "type": "module",
+  "dependencies": {
+    "level": "8.0.0",
+    "nanoid": "4.0.2",
+    "superagent": "8.1.2"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node loadTest.js",
+    "populate": "node populateDb.js"
+  }
+}

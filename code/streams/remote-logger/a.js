@@ -1,0 +1,5 @@
+console.log('a1')
+console.log('a2')
+console.error('aer1')
+console.log('a3')
+console.error('aer2')

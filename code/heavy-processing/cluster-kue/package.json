@@ -1,0 +1,22 @@
+{
+  "name": "cluster-kue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "16.1.4",
+    "express": "4.18.2",
+    "kue": "0.11.6",
+    "morgan": "1.10.0",
+    "mysql2": "3.3.3",
+    "sequelize": "6.32.0",
+    "sleep": "6.3.0",
+    "workerpool": "6.4.0"
+  }
+}
